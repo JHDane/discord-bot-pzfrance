@@ -37,7 +37,7 @@ bot.on("messageCreate", message => {
             message.delete(url);
             message.author.send({ embeds: [gif] });
         }
-        else if (channelId === "896421544660701205" && channelId === "896421379463848038" && urlWorkshopVerify3 != "https://tenor.com")
+        else if (channelId === "896421379463848038" || channelId === "896421544660701205" && urlWorkshopVerify3 != "https://tenor.com")
         {
             if(urlWorkshopVerify1 === 'https://steamcommunity.com/sharedfiles/filedetails/' || urlWorkshopVerify2 === 'https://steamcommunity.com/workshop/filedetails/') {
                 message.delete(url);
