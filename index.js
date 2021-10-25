@@ -1,7 +1,14 @@
 require('dotenv').config();
 
-const { Client, Intents } = require('discord.js');
-const bot = new Client({ intents: [Intents.FLAGS.GUILDS,Intents.FLAGS.GUILD_MESSAGES]});
+const Discord = require('discord.js');
+const bot = new Discord.Client({
+
+    intents: [
+        Discord.Intents.FLAGS.GUILDS,
+        Discord.Intents.FLAGS.GUILD_MESSAGES
+    ]
+
+});
 
 bot.on("ready", () => {
    console.log("bot rdy");
